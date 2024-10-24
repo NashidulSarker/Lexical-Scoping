@@ -27,6 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
 
+
 # Function to compute the inverse of the matrix, with caching
 cacheSolve <- function(x, ...) {
   inv <- x$getInverse()  # Check if the inverse is already cached
